@@ -24,3 +24,27 @@ Sample Output
 2 I am a file
 3 Read me until end-of-file.
 */
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner stdin = new Scanner(System.in);
+    int i = 1;
+    while (stdin.hasNextLine()) {
+        String str = stdin.nextLine();
+        if(str.isEmpty())
+            break;
+        System.out.println(i + " " +  str);
+        i++;
+    }
+    stdin.close();
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
+
+
